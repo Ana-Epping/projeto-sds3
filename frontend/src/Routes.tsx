@@ -4,18 +4,16 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 const Routes = () => {
       return (
-            <div>
-                  <BrowserRouter>
-                        <Switch>
-                              <Route path ="/" exact>
-                                    <Home/>
-                              </Route>
-                              <Route path ="/dashboard" exact>
-                                    <DashBoard/>
-                              </Route>
-                        </Switch>              
-                  </BrowserRouter>
-            </div>
+            <BrowserRouter>
+                  <Switch>
+                        <Route path="/" exact>
+                              <Home />
+                        </Route>
+                        <Route path="/dashboard" exact>
+                              <DashBoard />
+                        </Route>
+                  </Switch>
+            </BrowserRouter>
       );
 }
 
